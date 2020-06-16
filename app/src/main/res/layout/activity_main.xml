@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="119dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingLeft="10dp"
+        android:text="Moallem"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Subjects"
+        android:textColor="#4CAF50"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="408dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <LinearLayout
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:background="@drawable/background"
+                    android:elevation="20dp"
+                    app:srcCompat="@drawable/ic_phys" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/background"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text="Physics"
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:background="@drawable/background"
+                    android:elevation="20dp"
+                    app:srcCompat="@drawable/ic_bio" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/background"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text="Biology"
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:background="@drawable/background"
+                    android:elevation="20dp"
+                    app:srcCompat="@drawable/ic_phys" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/background"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text="Histroy"
+
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="23dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:background="@drawable/background"
+                    android:elevation="20dp"
+                    app:srcCompat="@drawable/ic_phys" />
+
+                <TextView
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/background"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:text="Algebra"
+                    android:textColor="#4CAF50"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <FrameLayout
+                android:layout_width="177dp"
+                android:layout_height="160dp"
+
+                android:layout_marginRight="30dp">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+
+                    android:background="@drawable/vedio_back"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="177dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="30dp">
+
+                <VideoView
+                    android:id="@+id/videoView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="49dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+
+                    android:background="@drawable/vedio_back"
+                    app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Back!Continue Learning?"
+        android:textColor="#4CAF50"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
