@@ -6,7 +6,7 @@ import android.widget.VideoView;
 
 public class StateBroadcastingVideoView extends VideoView{
     public interface PlayPauseListener {
-
+        void onPlay();
         void onPause();
     }
 
@@ -35,6 +35,10 @@ public class StateBroadcastingVideoView extends VideoView{
     @Override
     public void start() {
         super.start();
+        if(mListener != null) {
+            mListener.onPlay();
+        }
+
     }
 
     public void setPlayPauseListener(PlayPauseListener listener) {

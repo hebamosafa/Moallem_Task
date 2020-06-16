@@ -31,7 +31,7 @@
         android:layout_width="25dp"
         android:layout_height="20dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toEndOf="@+id/textView"

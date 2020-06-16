@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity  {
      ImageButton mPlayButton2;
      Uri uri;
     android.widget.MediaController mediaController;
+    android.widget.MediaController mediaController2;
     int stopPosition1=0;
     int stopPosition2=0;
 
@@ -38,17 +39,21 @@ public class MainActivity extends AppCompatActivity  {
 
         //Creating MediaController
         mediaController= new MediaController(this);
-        //set listeners when paused to get the last position
+        mediaController2= new MediaController(this);
 
 
-
-        Controll_vedio(videoView,mPlayButton,1);
-        Controll_vedio(videoView2,mPlayButton2,2);
+        Controll_vedio(videoView,mPlayButton,1,mediaController);
+        Controll_vedio(videoView2,mPlayButton2,2,mediaController2);
 
     }
 
-    void Controll_vedio(final StateBroadcastingVideoView videoView, final ImageButton mPlayButton,  final int id){
+    void Controll_vedio(final StateBroadcastingVideoView videoView, final ImageButton mPlayButton,  final int id,final android.widget.MediaController mediaController){
         videoView.setPlayPauseListener(new StateBroadcastingVideoView.PlayPauseListener() {
+            @Override
+            public void onPlay() {
+                mPlayButton.setVisibility(View.INVISIBLE);
+            }
+
             @Override
             public void onPause() {
                 mPlayButton.setVisibility(View.VISIBLE);
